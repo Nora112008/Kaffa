@@ -1,0 +1,271 @@
+header nav {
+  z-index: 2;
+  width: 100%;
+}
+header nav .navbar-brand img {
+  width: 90px;
+  margin-top: 10px;
+}
+header nav .navbar-nav{
+  column-gap: 23px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+header nav.navbar .navbar-toggler {
+  column-gap: 20px;
+}
+
+header nav .nav-link {
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+header nav .nav-link::before,
+header nav .nav-link span.shape,
+header nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: calc(100% / 3);
+  position: absolute;
+  background-color: var(--bs-success);
+  transition-duration: 0.5s;
+}
+header nav .nav-link::before {
+  top: 0;
+  left: -100%;
+}
+header nav .nav-link:hover::before {
+  left: 0;
+}
+
+header nav .nav-link span.shape {
+  top: calc(100% / 3);
+  right: -100%;
+}
+header nav .nav-link:hover span.shape {
+  right: 0;
+}
+header nav .nav-link::after {
+  bottom: 0;
+  left: -100%;
+}
+header nav .nav-link:hover::after {
+  left: 0;
+}
+
+header #carouselExampleCaptions .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+}
+
+header .carousel-inner .carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .carousel-inner .carousel-item:nth-of-type(1) {
+  background-image: url("../images/images_Kaffa/banner1.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(2) {
+  background-image: url("../images/images_Kaffa/banner2.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(3) {
+  background-image: url("../images/images_Kaffa/banner3.jpg");
+}
+header .carousel-inner .carousel-item:nth-of-type(4) {
+  background-image: url("../images/images_Kaffa/banner4.jpg");
+}
+
+header .carousel-inner .carousel-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .carousel-inner .carousel-item .carousel-caption {
+  position: initial;
+}
+header .carousel-inner .carousel-item .carousel-caption h5 {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 1s;
+}
+header .carousel-inner .carousel-item.active .carousel-caption h5 {
+  transform: translateY(0);
+  opacity: 1;
+}
+header .carousel-inner .carousel-item .carousel-caption p {
+  letter-spacing: 1px;
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+  width: 75%;
+}
+header .carousel-inner .carousel-item.active .carousel-caption p {
+  transform: translateY(0);
+  opacity: 1;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+header .carousel-inner .carousel-item.active .carousel-caption .buttons {
+  transform: translateY(0);
+  opacity: 1;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons a {
+  position: relative;
+  overflow: hidden;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons a::before,
+header .carousel-inner .carousel-item .carousel-caption .buttons a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: 21px solid;
+  border-top-color: var(--bs-success);
+  border-right-color: var(--bs-success);
+  border-left-color: var(--bs-success);
+  border-bottom-color: var(--bs-success);
+  transition-duration: 1s;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons a::before {
+  left: -100%;
+  border-right-color: transparent;
+}
+header
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .buttons
+  a:hover::before {
+  left: 0%;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons a::after {
+  right: -100%;
+  border-left-color: transparent;
+}
+header
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .buttons
+  a:hover::after {
+  right: 0%;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a span {
+  z-index: 2;
+  transition-duration: 1s;
+  position: relative;
+  font-size: 20px;
+  font-weight: light;
+  letter-spacing: 1px;
+}
+header .carousel-inner .carousel-item .carousel-caption .buttons a:hover span {
+  color: #fff;
+}
+#About{
+  background-color: var(--bs-success);
+  background-image: url("../images/images_Kaffa/leaves_pattern.png");
+  background-position: center;
+}
+ #About .part1 .item p{
+  line-height: 2;
+  letter-spacing: 1px;
+ }
+  #About .part1 .item .btn{
+    letter-spacing: 1px;
+  }
+
+#About .part2 .box .specialcard {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 85%;
+}
+#About .part2 .box .specialcard .front{
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: 2s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#About .part2 .box:nth-of-type(1) .specialcard .front{
+  background-image: url(../images/images_Kaffa/about_front_01.jpg);
+
+}
+#About .part2 .box:nth-of-type(2) .specialcard .front{
+    background-image: url(../images/images_Kaffa/about_front_02.jpg);
+
+}
+#About .part2 .box:nth-of-type(3) .specialcard .front{
+    background-image: url(../images/images_Kaffa/about_front_03.jpg);
+
+}
+#About .part2 .box .specialcard:hover .front{
+transform: rotateY(180deg);
+}
+
+#About .part2 .box .specialcard .back{
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition-duration: 2s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#About .part2 .box .specialcard:hover .back{
+transform: rotateY(0deg);
+}
+#About .part2 .box:nth-of-type(1) .specialcard .body{
+background-color: #404042;
+}
+#About .part2 .box:nth-of-type(2) .specialcard .body{
+  background-color: #887748;
+}
+#About .part2 .box:nth-of-type(3) .specialcard .body{
+  background-color: #6D1F37;
+}
+#About .part2 .box .specialcard .body a{
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 5px 25px;
+  transition-duration: 0.5s;
+}
+#About .part2 .box .specialcard .body a:hover{
+  background-color: #fff;
+}
+#About .part2 .box:nth-of-type(1) .specialcard .body a:hover{
+  color: #404042;
+}
+#About .part2 .box:nth-of-type(2) .specialcard .body a:hover{
+ color: #887748;
+}
+#About .part2 .box:nth-of-type(3) .specialcard .body a:hover{
+  color: #6D1F37;
+}
+#About .part2 .box .specialcard .body a i{
+transition-duration: 0.5s;
+}
+#About .part2 .box .specialcard .body a:hover i{
+margin-left: 5px;
+}
